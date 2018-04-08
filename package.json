@@ -1,0 +1,26 @@
+{
+  "name": "travelbud",
+  "version": "1.0.0",
+  "description": "Lets you find budget escapes around you",
+  "main": "index.js",
+  "scripts": {
+    "test": "ng test"
+  },
+  "keywords": [
+    "travel",
+    "planner",
+    "budget",
+    "escapes",
+    "trave;"
+  ],
+  "author": "Aishwarya Duggirala",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "googleplaces": "^0.6.1",
+    "mongoose": "^5.0.13"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
