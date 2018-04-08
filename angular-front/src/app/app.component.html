@@ -3,10 +3,8 @@
     <h1 class="display-3">{{title}}</h1>
     <p class="lead">{{desp}}</p>
     <hr class="my-4">
-    <p>Enter your budget, number of people travelling and number of days of vacation to get details of your next sweet escape.</p>
-    <p class="lead">
-      <input class="form-control mr-sm-2" type="text" placeholder="Enter number of days">
-    </p>
+    <p class="text-danger">Enter your budget, number of people travelling and number of days of vacation to get details of your next sweet escape.</p>
+    <form>
     <p class="lead">
         <input class="form-control mr-sm-2" type="text" placeholder="Enter number of people">
       </p>
@@ -25,8 +23,22 @@
         </div>
       </div>
       <br>
+      <div>
+          <label  class="col-lg-2 control-label">From</label>
+          <my-date-picker [options]="myDatePickerOptions" [(ngModel)]="datemodelFrom" name="datemodelFrom" required></my-date-picker>
+      </div>
+      <br>
+      <div>
+          <label  class="col-lg-2 control-label">To</label>
+          <my-date-picker [options]="myDatePickerOptions" [(ngModel)]="datemodelTo" name="datemodelTo" required></my-date-picker>
+      </div>
       <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+      </form>
   </div>
+  <div>
+      <my-date-picker [options]="myDatePickerOptions" [(ngModel)]="datemodel" name="datemodel" required></my-date-picker>
+  </div>
+
   
 
  
